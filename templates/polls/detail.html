@@ -1,5 +1,9 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
 </ul>
 <h1>{{ question.question_text }}</h1>
+
 
 {% if error_message %}
 <p><strong>{{ error_message }}</strong></p>{% endif %}
