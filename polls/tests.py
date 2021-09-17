@@ -120,17 +120,17 @@ class QuestionDetailViewTests(TestCase):
         response = self.client.get(url)
         self.assertContains(response, past_question.question_text)
 
-# class  IsPublishedTests(TestCase):
+class  IsPublishedTests(TestCase):
 
-#     def test_is_published(self):
-#         time = timezone.now() - datetime.timedelta(days=1, seconds=1)
-#         question = Question(pub_date=time)
-#         self.assertIs(question.test_is_published(), False)
+    def test_is_published(self):
+        time = timezone.now() - datetime.timedelta(days=1, seconds=1)
+        question = Question(pub_date=time)
+        self.assertIs(question.is_published(), True)
 
-# class CanVoteTests(TestCase):
+class CanVoteTests(TestCase):
 
-#     def test_can_vote(self):
-#         time = timezone.now() - datetime.timedelta(days=1)
-#         end_time = timezone.now() + datetime.timedelta(days=1)
-#         question = Question(pub_date=time, end_date=end_time)
-#         self.assertIs(question.can_vote(), False)
+    def test_can_vote(self):
+        time = timezone.now() - datetime.timedelta(days=1)
+        end_time = timezone.now() + datetime.timedelta(days=1)
+        question = Question(pub_date=time, end_date=end_time)
+        self.assertIs(question.can_vote(), True)
