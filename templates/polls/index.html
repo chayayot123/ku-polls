@@ -4,7 +4,10 @@
 <h1>Poll Question</h1>
 <ul>
     {% for question in latest_question_list %}
-    <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    <li><a>{{ question.question_text }} </a></li>
+    <a href="{% url 'polls:detail' question.id %}">{{"vote"}}</a>
+    <a href="{% url 'polls:results' question.id %}">{{"result"}}</a>
+    </br>
     {% endfor %}
 </ul>
 {% else %}
