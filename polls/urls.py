@@ -1,3 +1,4 @@
+"""Save path of the urls."""
 from django.urls import path
 
 from . import views
