@@ -2,3 +2,4 @@
 # required packages
 coverage
 django
+decouple
