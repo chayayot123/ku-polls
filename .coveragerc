@@ -5,7 +5,9 @@ branch = True
 cover_pylib = False
 # omit uninteresting files
 omit =
-    tests/*
+    polls/tests.py
     polls/migrations/*
     manage.py
     templates/*
+    polls/templates/polls/*
+    polls/static/*
