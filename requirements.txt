@@ -3,3 +3,4 @@
 django
 coverage
 python-decouple
+flake8
