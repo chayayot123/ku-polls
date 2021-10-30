@@ -1,15 +1,27 @@
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}"> {% if latest_question_list %}
-<h1>Poll Question</h1>
-<ul>
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<ul><h1> Poll Questions </h1></ul>
+{% if latest_question_list %}
+    <ul>
     {% for question in latest_question_list %}
-    <li><a>{{ question.question_text }} </a></li>
-    <a href="{% url 'polls:detail' question.id %}">{{"vote"}}</a>
-    <a href="{% url 'polls:results' question.id %}">{{"result"}}</a>
-    </br>
+        <li><p>
+            <a>{{ question.question_text }}</a>
+            {% if user.is_authenticated %}
+                {% if question.can_vote %}
+                    <a href="{% url 'polls:detail' question.id %}"> vote </a>
+                {% endif %}
+            {% endif %}
+            <a href="{% url 'polls:results' question.id %}"> results </a>
+        </p></li>    
     {% endfor %}
-</ul>
+    {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}">LOGOUT</a>
+    {% else %}
+        <a href="{% url 'login' %}">LOGIN</a>
+    {% endif %}
+    </ul>
 {% else %}
-<p>No polls are available.</p>
+    <p>No polls are available.</p>
 {% endif %}
