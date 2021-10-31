@@ -1,7 +1,7 @@
 language: python
 
 # you can use Python 3.7 instead
-python: "3.7"
+python: "3.7.3"
 
 # Install dependencies
 install:
