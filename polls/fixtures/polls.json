@@ -1,0 +1,101 @@
+[
+{
+  "model": "polls.question",
+  "pk": 1,
+  "fields": {
+    "question_text": "How often do you watch movies at the cinema?",
+    "pub_date": "2021-09-18T08:41:40Z",
+    "end_date": "2021-09-19T08:42:12Z"
+  }
+},
+{
+  "model": "polls.question",
+  "pk": 2,
+  "fields": {
+    "question_text": "What kind of the movies do you like?",
+    "pub_date": "2021-09-15T08:42:30Z",
+    "end_date": "2021-09-16T08:42:31Z"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 1,
+  "fields": {
+    "question": 1,
+    "choice_text": "At least 1 film per week",
+    "votes": 4
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 2,
+  "fields": {
+    "question": 1,
+    "choice_text": "2 - 6 film per week",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 3,
+  "fields": {
+    "question": 1,
+    "choice_text": "6 - 10 film per week",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 4,
+  "fields": {
+    "question": 1,
+    "choice_text": "more than 10 film per week",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 5,
+  "fields": {
+    "question": 2,
+    "choice_text": "action movies",
+    "votes": 12
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 6,
+  "fields": {
+    "question": 2,
+    "choice_text": "comedies",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 7,
+  "fields": {
+    "question": 2,
+    "choice_text": "romantic movies",
+    "votes": 1
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 8,
+  "fields": {
+    "question": 2,
+    "choice_text": "dramas",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 9,
+  "fields": {
+    "question": 2,
+    "choice_text": "horror movies",
+    "votes": 2
+  }
+}
+]
