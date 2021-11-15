@@ -19,6 +19,7 @@ from django.conf.urls import include
 from . import views
 
 urlpatterns = [
+    path('', views.index, name="index"),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
