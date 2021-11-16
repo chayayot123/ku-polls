@@ -5,24 +5,34 @@
 This assignment is the project to conducting the polls or surveys within KU community.
 
 ## Project Documents
+
 * [Wiki Home](../../wiki/Home)
+
 * [Vision Statement](https://github.com/chayayot123/ku-polls/wiki/Vision-Statement)
+
 * [Requirements](https://github.com/chayayot123/ku-polls/wiki/Requirements)
 
+
 ## Iteration
+
 * [Iteration 1 Plan](https://github.com/chayayot123/ku-polls/wiki/Iteration-1-Plan) and [Task Board](https://github.com/chayayot123/ku-polls/projects/2)
+
 * [Iteration 2 Plan](https://github.com/chayayot123/ku-polls/wiki/Iteration-2-Plan) and [Task Board](https://github.com/chayayot123/ku-polls/projects/3)
+
 * [Iteration 3 Plan](https://github.com/chayayot123/ku-polls/wiki/Iteration-3-Plan) and [Task Board](https://github.com/chayayot123/ku-polls/projects/4)
+
 
 ## Running KU Polls
 
 After you clone the ku polls work please use this command to run the work.
+
 ```
 python manage.py migrate
 python manage.py loaddata users polls
 ```
 
 After you run this command.Use this command to run in your local machine.
+
 ```
 python manage.py runserver
 ```
