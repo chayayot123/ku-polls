@@ -19,7 +19,7 @@ python manage.py migrate
 python manage.py loaddata users polls
 ```
 
-After you run this command.Use this command to run in your local machine
+After you run this command.Use this command to run in your local machine.
 ```
 python manage.py runserver
 ```
