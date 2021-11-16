@@ -11,4 +11,11 @@ This assignment is the project to conducting the polls or surveys within KU comm
 * [Iteration 2 Plan](https://github.com/chayayot123/ku-polls/wiki/Iteration-2-Plan)
 * [Iteration 3 Plan](https://github.com/chayayot123/ku-polls/wiki/Iteration-3-Plan)
 
+## Running KU Polls
 
+Users provided by the initial data (users.json):
+
+| Username  | Password    |
+|-----------|-------------|
+| demo01     | Howl4251   |
+| demo02     | Howl4421   |

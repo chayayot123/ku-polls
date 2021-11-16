@@ -90,6 +90,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 LOGIN_REDIRECT_URL = "/polls/"
+LOGOUT_REDIRECT_URL = "/accounts/login"
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
