@@ -13,6 +13,18 @@ This assignment is the project to conducting the polls or surveys within KU comm
 
 ## Running KU Polls
 
+After you clone the ku polls work please use this command to run the work.
+```
+python manage.py migrate
+python manage.py loaddata users polls
+```
+
+After you run this command.Use this command to run in your local machine
+```
+python manage.py runserver
+```
+
+
 Users provided by the initial data (users.json):
 
 | Username  | Password    |
